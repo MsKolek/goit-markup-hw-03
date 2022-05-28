@@ -101,6 +101,7 @@ h1 {
   letter-spacing: 0.06em;
   align-self: center;
   margin-top: 30px;
+  border: 0;
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
 }
@@ -151,29 +152,44 @@ h2 {
 }
 .team-photos li {
   margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
+.image-description {
+  flex-grow: 1;
+  margin: auto;
+}
+
 .name-surname {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .team-members {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
 }
 footer {
   background-color: #2f303a;
 }
 .footer-company-logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.footer-company-logo span {
   font-family: "Raleway";
   color: #2196f3;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: -5px;
 }
 .footer-company-logo a {
   font-family: "Raleway";
@@ -191,13 +207,22 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding-bottom: 9px;
 }
-.contact-footer {
+.contact-mail,
+.contact-tel {
+  display: block;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.contact-mail {
+  padding-bottom: 9px;
+}
+.contact-tel {
+  padding-bottom: 60px;
 }
 .mail-footer {
   text-decoration: underline;
@@ -205,6 +230,13 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
+}
+.buttons-navigation {
+  display: flex;
+  justify-content: center;
+  margin-left: -8px;
+  margin-bottom: -44px;
 }
 .filter-button {
   cursor: pointer;
@@ -214,11 +246,25 @@ address {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-left: 8px;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list li {
+  flex-basis: calc(100% / 3 - 10px);
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
 }
 .product {
   font-weight: 700;

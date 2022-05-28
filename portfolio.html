@@ -16,26 +16,26 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header-container">
         <!-- Logo na stronie -->
         <div class="company-logo">
-          Web
+          <span>Web</span>
           <a href="./index.html">Studio</a>
         </div>
         <!-- Logo na stronie -->
 
         <!-- Lista nawigacyjna -->
-        <div class="site-navigation">
-          <nav>
-            <ul>
-              <li><a class="links" href="/agencja">Agencja</a></li>
-              <li>
-                <a class="links" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li><a class="links" href="/kontakt">Kontakt</a></li>
-            </ul>
-          </nav>
-        </div>
+
+        <nav>
+          <ul class="site-navigation">
+            <li><a class="links" href="/agencja">Agencja</a></li>
+            <li>
+              <a class="links" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="links" href="/kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+
         <div class="contact-navigation">
           <a class="links" href="mailto:info@devstudio.com"
             >info@devstudio.com
@@ -43,14 +43,13 @@
           <a class="links" href="tel:+48111111111">+48 111 111 111</a>
         </div>
       </div>
-      <!-- Lista nawigacyjna -->
-
-      <!-- Przyciski -->
     </header>
-    <main>
+    <!-- Lista nawigacyjna -->
+    <!-- Przyciski -->
+    <main class="section">
       <section>
         <div class="container">
-          <ul>
+          <ul class="buttons-navigation">
             <li>
               <button class="filter-button" type="button">Wszystkie</button>
             </li>
@@ -70,7 +69,7 @@
       <!-- lista ze zdjeciami -->
       <section>
         <div class="container">
-          <ul>
+          <ul class="portfolio-list">
             <li>
               <img
                 src="images/img_z2.jpg"
@@ -78,8 +77,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Technocrack</div>
-              <div class="product-type">Strona internetowa</div>
+              <div class="image-description">
+                <div class="product">Technocrack</div>
+                <div class="product-type">Strona internetowa</div>
+              </div>
             </li>
             <li>
               <img
@@ -88,8 +89,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Grafika New Orlean vs Golden Star</div>
-              <div class="product-type">Dizajn</div>
+              <div class="image-description">
+                <div class="product">Grafika New Orlean vs Golden Star</div>
+                <div class="product-type">Dizajn</div>
+              </div>
             </li>
             <li>
               <img
@@ -98,8 +101,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Restauracja Seafood</div>
-              <div class="product-type">Aplikacja</div>
+              <div class="image-description">
+                <div class="product">Restauracja Seafood</div>
+                <div class="product-type">Aplikacja</div>
+              </div>
             </li>
             <li>
               <img
@@ -108,8 +113,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Projekt Prime</div>
-              <div class="product-type">Marketing</div>
+              <div class="image-description">
+                <div class="product">Projekt Prime</div>
+                <div class="product-type">Marketing</div>
+              </div>
             </li>
             <li>
               <img
@@ -118,8 +125,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Projekt Boxes</div>
-              <div class="product-type">Aplikacja</div>
+              <div class="image-description">
+                <div class="product">Projekt Boxes</div>
+                <div class="product-type">Aplikacja</div>
+              </div>
             </li>
             <li>
               <img
@@ -128,8 +137,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Inspiration has no Borders</div>
-              <div class="product-type">Strona internetowa</div>
+              <div class="image-description">
+                <div class="product">Inspiration has no Borders</div>
+                <div class="product-type">Strona internetowa</div>
+              </div>
             </li>
             <li>
               <img
@@ -138,8 +149,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Magazyn Limited Edition</div>
-              <div class="product-type">Dizajn</div>
+              <div class="image-description">
+                <div class="product">Magazyn Limited Edition</div>
+                <div class="product-type">Dizajn</div>
+              </div>
             </li>
             <li>
               <img
@@ -148,8 +161,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Projekt LAB</div>
-              <div class="product-type">Marketing</div>
+              <div class="image-description">
+                <div class="product">Projekt LAB</div>
+                <div class="product-type">Marketing</div>
+              </div>
             </li>
             <li>
               <img
@@ -158,8 +173,10 @@
                 width="370"
                 height="294"
               />
-              <div class="product">Growing Business</div>
-              <div class="product-type">Aplikacja</div>
+              <div class="image-description">
+                <div class="product">Growing Business</div>
+                <div class="product-type">Aplikacja</div>
+              </div>
             </li>
           </ul>
         </div>
@@ -179,7 +196,7 @@
         <a class="mail-footer" href="mailto:info@example.com"
           >info@example.com</a
         >
-        <a class="contact-footer" href="tel:+48111111111">+48 111 111 111</a>
+        <a class="contact-tel" href="tel:+48111111111">+48 111 111 111</a>
       </div>
     </footer>
   </body>
