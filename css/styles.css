@@ -43,6 +43,7 @@ a {
 }
 
 .site-navigation {
+  padding-inline-start: 0%;
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -68,6 +69,7 @@ a {
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
+
 .main-section {
   background-color: #2f303a;
   display: flex;
@@ -125,7 +127,9 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
 }
-
+.profession {
+  padding-top: 0;
+}
 h2 {
   font-weight: 700;
   font-size: 36px;
@@ -236,7 +240,7 @@ address {
   display: flex;
   justify-content: center;
   margin-left: -8px;
-  margin-bottom: -44px;
+  margin-bottom: 0px;
 }
 .filter-button {
   cursor: pointer;
@@ -256,15 +260,31 @@ address {
   background-color: #2196f3;
   color: #ffffff;
 }
+.photo-list-margin {
+  padding-top: 0;
+}
 .portfolio-list {
+  padding-inline-start: 0%;
   display: flex;
   flex-wrap: wrap;
+
+  margin-bottom: -22px;
+  margin-left: -22px;
+  margin-block-start: 0%;
 }
 .portfolio-list li {
-  flex-basis: calc(100% / 3 - 10px);
+  flex-basis: calc(100% / 3 - 22px);
   flex-direction: column;
   border: 1px solid #eeeeee;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  margin-left: 22px;
+}
+.portfolio-list img {
+  margin: 0 auto;
+}
+.image-description-portfolio {
+  flex-grow: 1;
+  margin: auto;
 }
 .product {
   font-weight: 700;
