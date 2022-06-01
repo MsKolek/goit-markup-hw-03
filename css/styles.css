@@ -56,7 +56,6 @@ a {
   color: inherit;
   text-decoration: none;
   margin-left: 23px;
-  margin-right: 23px;
 }
 .links:hover,
 .links:focus {
@@ -82,6 +81,9 @@ section {
   justify-content: center;
   align-self: center;
   flex-wrap: wrap;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 h1 {
   color: #ffffff;
@@ -93,6 +95,8 @@ h1 {
   text-transform: uppercase;
   align-self: center;
   flex-wrap: wrap;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .main-button {
@@ -105,7 +109,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   align-self: center;
-  margin-top: 30px;
+  margin: 0;
   border: 0;
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
@@ -149,19 +153,22 @@ h2 {
 }
 .team-photos {
   display: flex;
-  margin-left: -30px;
-  justify-content: center;
-  padding-inline-start: 0%;
+  justify-content: space-between;
+
+  padding: 0;
 }
 .team-photos li {
-  margin-left: 30px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .image-description {
   flex-grow: 1;
-  margin: auto;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .name-surname {
@@ -170,6 +177,8 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
 }
 .team-members {
   font-size: 16px;
@@ -266,17 +275,12 @@ address {
   padding-inline-start: 0%;
   display: flex;
   flex-wrap: wrap;
-
-  margin-bottom: -22px;
-  margin-left: -22px;
-  margin-block-start: 0%;
+  padding: 0;
+  justify-content: space-between;
 }
 .portfolio-list li {
-  flex-basis: calc(100% / 3 - 22px);
-  flex-direction: column;
   border: 1px solid #eeeeee;
   margin-bottom: 22px;
-  margin-left: 22px;
 }
 .portfolio-list img {
   margin: 0 auto;
@@ -284,12 +288,16 @@ address {
 .image-description-portfolio {
   flex-grow: 1;
   margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 .product {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 .product-type {
   font-size: 16px;
