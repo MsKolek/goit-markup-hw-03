@@ -155,7 +155,7 @@ h2 {
 .team-photos {
   display: flex;
   justify-content: space-between;
-  
+  padding: 0;
 }
 .team-photos li {
   display: flex;
